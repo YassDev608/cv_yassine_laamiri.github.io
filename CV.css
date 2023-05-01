@@ -1,0 +1,344 @@
+body {
+    margin: 0;
+}
+
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+#header {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100% 60%;
+    background-image: url('EMI3.jpg');
+    background-attachment: fixed;
+    width: 100%;
+    height: 40%;
+}
+
+#navBar {
+    position: absolute;
+    background-color: #262626;
+    top: 40%;
+    width: 100%;
+    height: 10%;
+}
+
+#main {
+    position: absolute;
+    background-color: beige;
+    top: 50%;
+    bottom: 0%;
+    width: 100%;
+}
+
+#photos {
+    position: absolute;
+    left: 60%;
+    top: 10%;
+    width: 25%;
+    height: 30vh;
+    background-image: url('yassEMI-removebg-preview.png') /*url('yassEMI.jpg')*/;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 60vw 55vh;
+    background-size: 27% 35vh;
+    /*border-radius: 75%*/;
+    border-radius: 75%;
+}
+
+#photos:hover {
+    border: 5px solid aqua;
+}
+
+#infos {
+    position: absolute;
+    top: 60%;
+    right: 0;
+    min-width: 60%;
+}
+
+#infos pre {
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    background-color: mediumspringgreen;
+    font-size: 20px;
+    font-weight: bold;
+    width: 25px;
+    height: 30px;
+    border: 3px solid transparent;
+    box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    z-index: 2;
+    transition: all 1s ease-in-out;
+}
+
+#infos pre:hover {
+    width: 100%;
+    right: 0;
+    overflow: visible;
+}
+
+#infos #pre3:hover {
+  overflow: hidden;    
+
+}
+
+@media screen and (max-width: 800px){
+    #infos {
+        width: 100%;
+    }  
+    #certifs {
+        transform: translateX(100px);
+    }
+}
+
+#pre2 {
+    top: 50px;
+}
+
+#pre3 {
+    top: 100px;
+}
+
+span {
+    transform: translateY(5px);
+}
+
+span img {
+    transform: translateY(3px);
+}
+
+/*
+#pre1 {
+    transition: all 2s ease-in-out;
+}
+
+#pre1:hover {
+    overflow: visible;
+    right: 0;
+    width: 100%;
+}
+
+*/
+
+
+
+#navBar {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    display: block;
+    overflow: visible;
+}
+
+@media screen and (max-width: 600px){
+    #navBar {
+        font-size: 15px;
+    }
+}
+
+
+#navBar > div {
+    display: block;
+    float: right;
+    padding: 20px;
+    margin: 0;
+    color: aliceblue;
+    position: relative;
+}
+
+.CV {
+    cursor: pointer;
+}
+
+.CV ul {
+    list-style-type: none;
+    color: #262626;
+    background-color: white;
+    position: absolute;
+    font-size: 20px;
+    top: 25px;
+    right: 0;
+    width: 600px;
+    display: block;
+    z-index: 2;
+    box-shadow: 2px 0px 4px 0 rgba(0, 0, 0, 0.8);
+    display: none;
+    overflow-x: scroll;
+}
+
+
+
+.CV:hover ul{
+    display: block;
+}
+
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #262626;
+}
+
+a:hover {
+    color: lightblue;
+}
+
+#mainText {
+    text-align: justify;
+    position: absolute;
+    top: 65%;
+    left: 15%;
+    font-family: 'Sofia', sans-serif;
+    text-shadow: 2px 2px 5px red;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0;
+}
+
+
+@media screen and (max-width: 1100px) {
+    #mainText {
+        left: 0;
+    }
+}
+
+@media screen  and (max-width: 900px) {
+    ul li{
+        transform: translateX(100px);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #mainText {
+        left: 0;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+  /*  #navBar div {
+        clear: right;
+    }*/
+    #header {
+        background-size: 100% 60%;
+
+    }
+   /* #mainText {
+        top: 70%;
+    }*/
+   /* #navBar {
+        z-index: 1;
+        overflow: visible;
+    }*/
+    ul li {
+        font-size: 10px;
+        transform: translateX(300px);
+    }
+    /*#infos {
+        top: 70%;
+    }*/
+}
+
+
+button {
+    box-shadow: 2px 2px 5px red;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button:hover {
+    color: lightblue;
+    cursor: pointer;
+}
+
+.menu-bar {
+    margin: 0;
+    position: absolute;
+    top: 10%;
+    left: 1vw;
+    width: 20px;
+    bottom: 10%;
+    border: 3px solid #fff; 
+}
+
+
+.menu-bar-btn {
+    position: absolute;
+    margin: auto;
+    height: 0;
+    right: 5px;
+    left: 5px;
+    top: 45%;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.menu-bar-btn::before {
+    content: " ";
+    position: absolute;
+    margin: auto;
+    height: 0;
+    right: -2px;
+    left: -2px;
+    top: 10px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-bar-btn::after {
+    content: " ";
+    position: absolute;
+    margin: auto;
+    height: 0;
+    right: -2px;
+    left: -2px;
+    top: -13px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-bar.open .menu-bar-btn {
+    background: transparent;
+    border-color: transparent;
+}
+
+.menu-bar.open .menu-bar-btn::before {
+    transform:  translateY(-13px) rotate(45deg);
+}
+
+.menu-bar.open .menu-bar-btn::after {
+    transform:  translateY(10px) rotate(-45deg);
+}
+
+#left-menu {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: #C2BDAA;
+    width: 200px;
+    z-index: 1;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    bottom: 0;
+    padding: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+#projets {
+    margin: 0;
+    top: 0;
+    left: 50px;
+    bottom: 10%;
+}

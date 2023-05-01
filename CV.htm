@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="CV.css">
+        <script src="CV.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="header"></div>
+        <div id="navBar">
+            <div class="CV">CV
+                <ul>
+                    <li><a href="CV/CV.pdf" target="_blank">visualiser CV</a></li>
+                </ul>
+            </div>
+            <div class="CV">Certificats
+                <ul style="width: 800px;" id="certifs">
+                    <li>HTML : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://verify.w3schools.com/1NI2MZ4NTJ">https://verify.w3schools.com/1NI2MZ4NTJ</a></li>
+                    <li>CSS : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://verify.w3schools.com/1NIUNIKTUI">https://verify.w3schools.com/1NIUNIKTUI</a></li>
+                    <li>JavaScript : <a href="https://verify.w3schools.com/1NMFE3F54R" target="_blank">https://verify.w3schools.com/1NMFE3F54R</a></li>
+                    <li>SQL : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://verify.w3schools.com/5YQ8MAN9T">https://verify.w3schools.com/5YQ8MAN9T</a></li>
+                    <li>React : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://verify.w3schools.com/1NN3DNNVDE">https://verify.w3schools.com/1NN3DNNVDE</a></li>
+                    <li>TypeScript : <a target="_blank" href="https://verify.w3schools.com/1NNDM2SD2E">https://verify.w3schools.com/1NNDM2SD2E</a></li>
+                    <li>Fronten developer : <a target="_blank" href="https://verify.w3schools.com/5YN50CL1W">https://verify.w3schools.com/5YN50CL1W</a></li>
+                    <li>Modern WEB developer : <a target="_blank" href="https://verify.w3schools.com/1NNDM2UZHY">https://verify.w3schools.com/1NNDM2UZHY</a></li>
+                </ul>
+            </div>
+            <div style="position: absolute" id="projets">Projets</div>
+            <div class="menu-bar" style="position: absolute;cursor: pointer;">
+                <div class="menu-bar-btn"></div>
+            </div>
+        </div>
+        <div id="main">
+            <div id="photos"></div>
+        </div>
+        <div id="infos">
+            <pre id="pre1" ><span class="material-symbols-outlined">call</span> : 0643972458</pre>
+            <pre id="pre2"><span class="material-symbols-outlined">mail</span> : laamiripy2021@gmail.com</pre>
+            <pre id="pre3"><span><img src="linkedin.png" width="25" height="25"></span> : <a href="https://www.linkedin.com/in/yassine-laamiri-3b5a75261/" target="_blank">www.linkedin.com/in/yassine-laamiri-3b5a75261/</a></pre>
+        </div>
+        <pre id="mainText">
+                    Yassine LAAMIRI,
+    etudiant emiste en génie informatique et digitalisation<br>
+                    <a href="CV/CV.pdf" target="_blank" download><button><i class="fa fa-download"></i> Télécharger mon CV</button></a>
+        </pre>
+        <div id="left-menu">
+            <a target="_blank" href="https://drive.google.com/file/d/1dtNcczjUOZxsEUH9kryLlkZLACOXcjLN/view?usp=share_link" download>Application Windows pour télécharger les videos internet réalisée par Java & Python</a>
+            <div style="min-width: 15%;height: 2px;background-color: lightyellow;position: relative;margin: 0;"></div>
+            <a target="_blank" href="Game/Game.htm">Jeu video développé par JavaScript</a>
+            <div style="min-width: 15%;height: 2px;background-color: lightyellow;position: relative;margin: 0;"></div>
+            <a target="_blank" href="Face-Detection.rar" download>Détecteur de visage développé par Python</a>
+            <div style="min-width: 15%;height: 2px;background-color: lightyellow;position: relative;margin: 0;"></div>
+            <a target="_blank" href="Calculator/index.html">Calculatrice développée par JavaScript, HTML & CSS</a>
+            <div style="min-width: 15%;height: 2px;background-color: lightyellow;position: relative;margin: 0;"></div>
+            <a target="_blank" href="https://drive.google.com/file/d/1_gPw0rxiRx4ouK1-ZI0NyleY5S0W7z-p/view?usp=share_link">Application Python pour la résolution des équations différentielles par la méthode de choleskey</a>
+            <div style="min-width: 15%;height: 2px;background-color: lightyellow;position: relative;margin: 0;"></div>
+        </div>
+        <script>
+            let menubtn = document.querySelector(".menu-bar");
+            let menu = document.getElementById("left-menu");
+            let Open = false;
+            menubtn.addEventListener('click',()=> {
+            if(!Open) {
+                menubtn.classList.add("open");
+                menu.style.display = "block";
+                Open = true;
+            } else {
+                menubtn.classList.remove("open");
+                menu.style.display = "none";
+                Open = false;
+            }
+            })
+            
+
+
+
+
+        </script>
+    </body>
+</html>

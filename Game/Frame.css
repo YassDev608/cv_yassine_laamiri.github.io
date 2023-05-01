@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+canvas {
+    background-color: #f2f2f2;
+}
+
+#reset {
+    position: absolute;
+    width: 200px;
+    left: 150px;
+    top: 180px;
+}
+
+.buttons {
+    font-weight: bold;
+    padding: 0;
+    min-height: 150px;
+    min-width: 220px;
+    position: absolute;
+    left: 120px;
+    bottom: 20vh;
+    display: grid;
+    gap: 10px;
+    align-content: center;
+    grid-template-columns: repeat(100px,100px);
+    grid-template-rows: repeat(50px,50px);
+    grid-template-areas: "up up"
+                         "down down";
+    align-items: center;
+    top: 440px;
+}
+
+
+
+#down {
+    grid-area: down;
+}
+
+#up {
+    grid-area: up;
+}
+
+
+button {
+    height: 40px;
+    background-color: lime;
+    outline: none;
+    border: none;
+    filter: drop-shadow(0px 2px 5px rgba(0,0,0,0.4));
+}
+
+button:hover {
+    cursor: pointer;
+}
