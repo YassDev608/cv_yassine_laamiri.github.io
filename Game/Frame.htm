@@ -10,8 +10,8 @@
 <body onload="startGame()">
     <button id="reset" style="display: none;">reset</button>
     <div class="buttons">
-        <button id="up" onclick="moveUp()" onmousedown="moveUp()" onmouseup="clearMvmt()">&#8593;</button>
-        <button id="down" onclick="moveDown()" onmousedown="moveDown()" onmouseup="clearMvmt()">&#8595;</button>
+        <button id="up"  onpointerdown="moveUp()" onpointerup="clearMvmt()" onmousedown="moveUp()" onmouseup="clearMvmt()">&#8593;</button>
+        <button id="down" onpointerdown="moveDown()" onpointerup="clearMvmt()"  onmousedown="moveDown()" onmouseup="clearMvmt()">&#8595;</button>
     </div>
     <script defer src="Frame.js"></script>
 </body>
