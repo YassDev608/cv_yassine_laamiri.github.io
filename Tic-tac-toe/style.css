@@ -1,0 +1,85 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #262626;
+}
+
+.message {
+    min-width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: -10vh;
+    display: none;
+    color: #333;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.message > p {
+    padding: 50px;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+
+
+.message > button {
+    opacity: 0.4;
+    background-color: lime;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    filter: drop-shadow(0 5px 10px rgba(0,0,0,0.4));
+}
+
+.message > button:hover {
+    cursor: pointer;
+}
+
+.options {
+    min-width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.options button {
+    background-color: lime;
+    padding: 20px;
+    border: 3px solid #262626;
+}
+
+.options button:hover {
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+.tic-tac-toe {
+    min-width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-rows: repeat(4,100px);
+    grid-template-columns: repeat(3,100px);
+}
+
+p {
+    font-size: 20px;
+}
+
+
+.tic-tac-toe > button {
+    font-size: 50px;
+    font-weight: bolder;
+    border: 3px solid lightgrey;
+    outline: none;
+    cursor: pointer;
+}
